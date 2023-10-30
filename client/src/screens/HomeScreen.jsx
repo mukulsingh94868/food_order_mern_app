@@ -8,9 +8,9 @@ const HomeScreen = () => {
     <div>
         <div className='row'>
             {
-               !!pizzas && pizzas?.map((pizza) => {
+               !!pizzas && pizzas?.map((pizza, index) => {
                 return (
-                    <div className='col-md-4'>
+                    <div className='col-md-4' key={index}>
                         <div>
                             <Pizza pizza={pizza} />
                         </div>

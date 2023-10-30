@@ -18,7 +18,7 @@ const pizzas = [
         "description": "Pepper Barbeque Chicken I cheese"
     },
     {
-        "name": "PEPPER BARBEQUE CHICKEN",
+        "name": "PEPPER PANEER",
         "varients": [
             "small",
             "medium",
@@ -36,7 +36,7 @@ const pizzas = [
         "description": "Pepper Barbeque Chicken I cheese"
     },
     {
-        "name": "PEPPER BARBEQUE CHICKEN",
+        "name": "DOUBLE CHEESE",
         "varients": [
             "small",
             "medium",
@@ -54,7 +54,7 @@ const pizzas = [
         "description": "Pepper Barbeque Chicken I cheese"
     },
     {
-        "name": "PEPPER BARBEQUE CHICKEN",
+        "name": "PEPPER SINGLE CHEESE",
         "varients": [
             "small",
             "medium",
@@ -72,7 +72,7 @@ const pizzas = [
         "description": "Pepper Barbeque Chicken I cheese"
     },
     {
-        "name": "PEPPER BARBEQUE CHICKEN",
+        "name": "PEPPER MIX CHEESE",
         "varients": [
             "small",
             "medium",
@@ -90,7 +90,7 @@ const pizzas = [
         "description": "Pepper Barbeque Chicken I cheese"
     },
     {
-        "name": "PEPPER BARBEQUE CHICKEN",
+        "name": "SMOKE GRILLED",
         "varients": [
             "small",
             "medium",
