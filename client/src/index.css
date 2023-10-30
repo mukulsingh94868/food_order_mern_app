@@ -33,7 +33,58 @@ h1 {
   color: white !important;
 }
 
+.nav-item {
+  font-weight: 700;
+  font-size: 16px !important;
+}
+
 select {
   box-shadow: none !important;
   border-color: black !important;
+}
+
+.power {
+  /* flex-grow: 0 !important; */
+  justify-content: end;
+}
+
+.myCart {
+  font-size: 40px !important;
+  font-weight: 700;
+  margin-bottom: 50px !important;
+}
+
+.centerData {
+  margin-top: 60px !important;
+}
+
+.varientItem {
+  font-weight: 700;
+  font-family: auto;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.varientQuantity {
+  font-weight: 400;
+  font-family: auto;
+  font-style: normal;
+}
+
+.addBtn {
+  color: green;
+  margin: 5px !important;
+  cursor: pointer;
+}
+
+.removeBtn {
+  color: red;
+  margin: 5px !important;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  color: red;
+  margin: 5px !important;
+  cursor: pointer;
 }

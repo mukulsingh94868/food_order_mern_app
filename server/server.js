@@ -3,10 +3,13 @@ const mongoose = require("mongoose");
 const app = express();
 
 const Pizza = require('./models/pizzaModel');
+const pizzaRoute = require('./routes/pizzaRoutes');
 
 // const db = require('./db.js');
 
 app.use(express.json());
+
+app.use('/api/pizzas', pizzaRoute);
 
 app.get('/', (req, res) => {
     res.send('hello world !');
