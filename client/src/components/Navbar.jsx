@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse power" id="navbarNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="/">Login</a>
+                                <a className="nav-link" aria-current="page" href="/login">Login</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/cart">

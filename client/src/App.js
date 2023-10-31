@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import HomeScreen from './screens/HomeScreen';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import CartScreen from './screens/CartScreen';
+import LoginScreen from './screens/LoginScreen';
+import RegisterScreen from './screens/RegisterScreen';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Routes>
           <Route path='/' exact element={<HomeScreen />} />
           <Route path='/cart' exact element={<CartScreen />} />
+          <Route path='/register' exact element={<RegisterScreen />} />
+          <Route path='/login' exact element={<LoginScreen />} />
         </Routes>
       </BrowserRouter>
     </div>

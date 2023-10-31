@@ -4,12 +4,14 @@ const app = express();
 
 const Pizza = require('./models/pizzaModel');
 const pizzaRoute = require('./routes/pizzaRoutes');
+const userRoute = require('./routes/userRoutes');
 
 // const db = require('./db.js');
 
 app.use(express.json());
 
 app.use('/api/pizzas', pizzaRoute);
+app.use('/api/users', userRoute);
 
 app.get('/', (req, res) => {
     res.send('hello world !');

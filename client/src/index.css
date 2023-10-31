@@ -88,3 +88,17 @@ select {
   margin: 5px !important;
   cursor: pointer;
 }
+
+input {
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
+
+.textCenter {
+  text-align: left;
+}
+
+.registerText {
+  font-size: 30px !important;
+  font-weight: 700;
+}
