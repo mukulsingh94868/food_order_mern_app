@@ -5,6 +5,7 @@ const app = express();
 const Pizza = require('./models/pizzaModel');
 const pizzaRoute = require('./routes/pizzaRoutes');
 const userRoute = require('./routes/userRoutes');
+const orderRoute = require('./routes/orderRoutes');
 
 // const db = require('./db.js');
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use('/api/pizzas', pizzaRoute);
 app.use('/api/users', userRoute);
+app.use('/api/orders', orderRoute);
 
 app.get('/', (req, res) => {
     res.send('hello world !');
@@ -32,7 +34,7 @@ mongoose.connect(CONNECTION_URL)
             console.log(`listening on port ${PORT}`);
             console.log('Database connection established!');
         })
-        
+
     }).catch((error) => {
         console.log(`error: ${error}`);
     })

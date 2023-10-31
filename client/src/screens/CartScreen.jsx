@@ -2,9 +2,10 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { addToCart, deleteFromCart } from '../actions/cardActions';
+import Checkout from '../components/Checkout';
 
 
 const CartScreen = () => {
@@ -50,7 +51,7 @@ const CartScreen = () => {
 
                 <div className='col-md-4 text-right'>
                     <h2>Sub Total: {subTotal}</h2>
-                    <Button variant='contained' style={{ background: 'red' }}>Check Out</Button>
+                    <Checkout subTotal={subTotal} />
                 </div>
             </div>
         </div>
