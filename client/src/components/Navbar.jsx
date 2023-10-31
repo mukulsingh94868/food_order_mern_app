@@ -55,7 +55,7 @@ const Navbar = () => {
                                                     'aria-labelledby': 'basic-button',
                                                 }}
                                             >
-                                                <MenuItem onClick={handleClose}>orders</MenuItem>
+                                                <MenuItem onClick={() => window.location.href = '/orders'}>orders</MenuItem>
                                                 <MenuItem onClick={() => dispatch(logoutUser())}>Logout</MenuItem>
                                             </Menu>
                                         </>
