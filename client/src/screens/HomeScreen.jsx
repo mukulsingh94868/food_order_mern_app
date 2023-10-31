@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import Pizza from '../components/Pizza';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllPizzas } from '../actions/pizzaActions';
+import Loading from '../components/Loading';
+import Error from '../components/Error';
 
 
 const HomeScreen = () => {
@@ -17,10 +19,9 @@ const HomeScreen = () => {
             <div className='row justify-content-center'>
                 {
                     loading ? (
-                        <h1>Loading...!</h1>
+                        <Loading />
                     ) : error ? (
-                        // when endpoints are not as same as the backend endpoints
-                        <h1>Something went wrong try again later...</h1>
+                        <Error error="Something went wrong try again later..." />
                     ) : (
                         pizzas?.map((pizza) => {
                             return (

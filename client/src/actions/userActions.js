@@ -36,4 +36,9 @@ export const loginUser = (user) => async (dispatch) => {
             payload: error
         })
     }
+};
+
+export const logoutUser = () => async (dispatch) => {
+    localStorage.removeItem('currentUser');
+    window.location.href = '/login';
 }
