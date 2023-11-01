@@ -24,7 +24,6 @@ export const addToCart = (pizza, quantity, varient) => async (dispatch, getState
             });
         }
     }
-
     const cartItems = getState().cartReducer.cartItems;
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }

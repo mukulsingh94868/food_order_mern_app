@@ -49,12 +49,11 @@ router.post('/placeorder', async (req, res) => {
 
 router.post('/getuserorders', async (req, res) => {
     const { userid } = req.body;
-
     try {
-        const orders = await Order.find({ userid: userid });
+        const orders = await Order.find({ userid: userid })?.sort({ _id: -1 });
         res.send(orders)
     } catch (error) {
-        return res.status(400).json({ messgae: 'Something went wrong'})
+        return res.status(400).json({ messgae: 'Something went wrong' });
     }
 })
 
